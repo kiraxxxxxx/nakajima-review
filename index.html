@@ -28,6 +28,14 @@
   .imgcol img{width:100%;max-width:230px;border-radius:8px;display:block;background:#fff}
   .imgcol.two img{max-width:48%}
   .imgcol.five img{max-width:31%}
+  .gui-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:6px 0 4px}
+  .gui-item{background:#fbfaf8;border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center}
+  .gui-item img{width:100%;border-radius:7px;background:#fff;display:block;margin-bottom:6px}
+  .gui-no{font-family:"Playfair Display",serif;color:var(--gold);font-size:15px;line-height:1}
+  .gui-en{font-size:12.5px;font-weight:600;line-height:1.35;margin-top:3px}
+  .gui-jp{font-size:12px;color:var(--grey);margin:1px 0 5px}
+  .gui-d{font-size:11.5px;color:#555;line-height:1.55;text-align:left}
+  @media(max-width:640px){.gui-grid{grid-template-columns:repeat(2,1fr)}}
   .body{flex:2 1 420px;padding:22px 26px}
   .pname{font-size:21px;font-weight:600;margin-bottom:2px}
   .pname .jp{font-size:14px;color:var(--grey);font-weight:400;margin-left:8px}
@@ -194,33 +202,56 @@
 
   <!-- F 浮世絵ぐい呑 5図柄 -->
   <div class="card">
-    <div class="card-top">
-      <div class="imgcol five">
-        <img src="img/DSC07619.jpg" alt="神奈川沖浪裏">
-        <img src="img/DSC07767.jpg" alt="赤富士・凱風快晴">
-        <img src="img/DSC07638-Edit.jpg" alt="赤富士">
-        <img src="img/DSC07769.jpg" alt="帆船・里">
-        <img src="img/DSC07777.jpg" alt="漁師・里">
+    <div class="body" style="flex:1 1 100%;padding:22px 26px">
+      <div class="pname">Ukiyo-e Guinomi <span class="jp">浮世絵ぐい呑（富嶽三十六景）</span></div>
+      <div class="meta">φ8.5cm × H4.5cm／約40g｜各図柄5点限定（うち1点はフルセット用／個別販売は各4点：Early Bird 各2／KS Special 各2）</div>
+      <div class="desc">A Wajima-nuri sake cup with one scene from Hokusai's <i>Thirty-six Views of Mount Fuji</i> on its interior. Gold and silver are laid in <i>maki-e</i> over a durable lacquer base, then finished with colored lacquer — light, easy to hold, gentle on the lips.<br><span style="color:#7a7a7a;font-size:13px">（内側に北斎の富嶽三十六景。蒔絵で金銀を施し色漆で仕上げ。軽く持ちやすく口当たりやわらか。）</span></div>
+
+      <p style="font-size:13.5px;color:#444;margin:16px 0 4px"><b>5つの図柄 ── 写真と名称の対応</b></p>
+      <div class="gui-grid">
+        <div class="gui-item">
+          <img src="img/DSC07619.jpg" alt="神奈川沖浪裏">
+          <div class="gui-no">①</div>
+          <div class="gui-en">The Great Wave off Kanagawa</div>
+          <div class="gui-jp">神奈川沖浪裏</div>
+          <div class="gui-d">青い大波が舟の上にうねり、遠くに小さな富士。世界で最も知られた波。</div>
+        </div>
+        <div class="gui-item">
+          <img src="img/DSC07628-Edit.jpg" alt="甲州石班澤">
+          <div class="gui-no">②</div>
+          <div class="gui-en">Kajikazawa in Kai Province</div>
+          <div class="gui-jp">甲州石班澤</div>
+          <div class="gui-d">岩場で網を打つ漁師。背後に静かな富士。忍耐の情景。</div>
+        </div>
+        <div class="gui-item">
+          <img src="img/DSC07638-Edit.jpg" alt="凱風快晴 赤富士">
+          <div class="gui-no">③</div>
+          <div class="gui-en">South Wind, Clear Sky (Red Fuji)</div>
+          <div class="gui-jp">凱風快晴（赤富士）</div>
+          <div class="gui-d">夜明けに紅く染まる富士。最も吉祥とされる一図。</div>
+        </div>
+        <div class="gui-item">
+          <img src="img/DSC07630-Edit.jpg" alt="尾州不二見原">
+          <div class="gui-no">④</div>
+          <div class="gui-en">Fuji through the Owari Province</div>
+          <div class="gui-jp">尾州不二見原</div>
+          <div class="gui-d">桶職人がつくる大きな桶の輪の中に富士。日常と永遠を一つの円に。</div>
+        </div>
+        <div class="gui-item">
+          <img src="img/DSC07643-Edit.jpg" alt="山下白雨">
+          <div class="gui-no">⑤</div>
+          <div class="gui-en">Rainstorm Beneath the Summit</div>
+          <div class="gui-jp">山下白雨</div>
+          <div class="gui-d">黒い山肌を稲妻が裂き、山頂は静かに佇む。</div>
+        </div>
       </div>
-      <div class="body">
-        <div class="pname">Ukiyo-e Guinomi <span class="jp">浮世絵ぐい呑（富嶽三十六景）</span></div>
-        <div class="meta">φ8.5cm × H4.5cm／約40g｜各図柄5点限定（うち1点はフルセット用／個別販売は各4点：Early Bird 各2／KS Special 各2）</div>
-        <div class="desc">A Wajima-nuri sake cup with one scene from Hokusai's <i>Thirty-six Views of Mount Fuji</i> on its interior. Gold and silver are laid in <i>maki-e</i> over a durable lacquer base, then finished with colored lacquer — light, easy to hold, gentle on the lips.<br><span style="color:#7a7a7a;font-size:13px">（内側に北斎の富嶽三十六景。蒔絵で金銀を施し色漆で仕上げ。軽く持ちやすく口当たりやわらか。）</span></div>
-        <p style="font-size:13.5px;color:#444;margin:6px 0 2px"><b>図柄ごとの英語紹介（5種）：</b></p>
-        <ul style="font-size:13px;color:#444;margin:0 0 10px 18px;line-height:1.7">
-          <li><b>The Great Wave off Kanagawa</b>（神奈川沖浪裏）— The most famous wave in the world, curling above three boats as Fuji watches from afar.</li>
-          <li><b>Kajikazawa in Kai Province</b>（甲州石班澤）— A lone fisherman casting his net, Fuji rising calm beyond — a meditation on patience.</li>
-          <li><b>South Wind, Clear Sky / Red Fuji</b>（凱風快晴）— The mountain glowing crimson at dawn, the most auspicious of Hokusai's views.</li>
-          <li><b>Fuji through the Owari Province</b>（尾州不二見原）— Fuji framed inside a cooper's giant barrel — the everyday and the eternal in one circle.</li>
-          <li><b>Rainstorm Beneath the Summit</b>（山下白雨）— Lightning splits the dark slopes while the summit stands serene.</li>
-        </ul>
-        <table class="plan">
-          <tr><th>プラン</th><th>定価</th><th>割引</th><th>支援価格（送料別）</th><th>限定数</th></tr>
-          <tr class="plan-eb"><td>Early Bird</td><td class="strike">¥170,000</td><td>30%OFF</td><td class="price">¥119,000</td><td>各図柄2</td></tr>
-          <tr><td>KS Special</td><td class="strike">¥170,000</td><td>20%OFF</td><td class="price">¥136,000</td><td>各図柄2</td></tr>
-        </table>
-        <div class="chk">ご確認：5図柄の名称・図柄の説明（神奈川沖浪裏＝波 など）は合っていますか？／写真と図柄名の対応は後ほど整えます（図柄名の確定をお願いします）。</div>
-      </div>
+
+      <table class="plan">
+        <tr><th>プラン</th><th>定価</th><th>割引</th><th>支援価格（送料別）</th><th>限定数</th></tr>
+        <tr class="plan-eb"><td>Early Bird</td><td class="strike">¥170,000</td><td>30%OFF</td><td class="price">¥119,000</td><td>各図柄2</td></tr>
+        <tr><td>KS Special</td><td class="strike">¥170,000</td><td>20%OFF</td><td class="price">¥136,000</td><td>各図柄2</td></tr>
+      </table>
+      <div class="chk">ご確認：<b>写真と図柄名の対応</b>（①神奈川沖浪裏＝青い大波 … ⑤山下白雨＝黒富士に稲妻）で合っていますか？ 相違や図柄の追加・差し替えがあれば、図柄番号①〜⑤でお知らせください。</div>
     </div>
   </div>
 
